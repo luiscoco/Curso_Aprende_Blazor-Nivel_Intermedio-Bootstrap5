@@ -1,14 +1,20 @@
-# How to install Bootstrap 5 Components in your Blazor Web Application
+# How to install bootstrap 5 Components in your Blazor Web Application
+
+For more information about **bootstrap 5** components visit this URL: https://getbootstrap.com/docs/5.0/getting-started/introduction/
+
+See information about the **accordion** component in this URL: https://getbootstrap.com/docs/5.0/components/accordion/
+
+See information about the **navbar** component in this URL: https://getbootstrap.com/docs/5.0/components/navbar/
 
 ## 1. Modify the App.razor
 
-Include a new line for the Bootstrap 5 style reference in the App.razor **head** HTML element:
+Include a new line for the **bootstrap 5** style reference in the App.razor **head** HTML element:
 
 ```
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 ```
 
-Also include the Bootstrap 5 script in the App.razor **body** HTML element:
+Also include the **bootstrap 5** script in the App.razor **body** HTML element:
 
 ```
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
