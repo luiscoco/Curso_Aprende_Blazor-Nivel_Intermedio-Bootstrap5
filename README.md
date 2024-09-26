@@ -118,3 +118,6 @@ Open the NavMenu.razor and add this new Navlink below the Weather one:
 
 ## 4. Run the application and see the result
 
+We navigate to the Accordion component selected the menu option and the you can click on the Accordion Items to collapse or expan them
+
+![image](https://github.com/user-attachments/assets/57dc824a-1df8-4fd7-b7d1-04997c1fe85b)
