@@ -322,4 +322,8 @@ We modify the **MainLayout.razor** component and include the following code:
 
 ![image](https://github.com/user-attachments/assets/af333e66-31b3-43c7-b7b6-7f4feea5368f)
 
+![image](https://github.com/user-attachments/assets/5c8d60af-555b-4a67-804e-2c70665163d3)
+
+![image](https://github.com/user-attachments/assets/b9672bc9-3016-4eb7-953c-5c7d5873a4c7)
+
 
