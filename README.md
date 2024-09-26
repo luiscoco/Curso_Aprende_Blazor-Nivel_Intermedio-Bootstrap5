@@ -1,10 +1,10 @@
 # How to install bootstrap 5 Components in your Blazor Web Application
 
-For more information about **bootstrap 5** components visit this URL: https://getbootstrap.com/docs/5.0/getting-started/introduction/
+For more information about **Bootstrap 5** components visit this URL: https://getbootstrap.com/docs/5.0/getting-started/introduction/
 
-See information about the **accordion** component in this URL: https://getbootstrap.com/docs/5.0/components/accordion/
+See information about the **Accordion** component in this URL: https://getbootstrap.com/docs/5.0/components/accordion/
 
-See information about the **navbar** component in this URL: https://getbootstrap.com/docs/5.0/components/navbar/
+See information about the **Navbar** component in this URL: https://getbootstrap.com/docs/5.0/components/navbar/
 
 ## 1. Modify the App.razor
 
@@ -255,3 +255,71 @@ We first press in the **Expand All** button
 Then we press in the **Collapse All** button
 
 ![image](https://github.com/user-attachments/assets/2739ffe2-3b54-492c-a617-43709492c8fd)
+
+## 9. Now replace the existing NavMenu.razor(Blazor component) with a Navbar(Bootstrap 5 component)
+
+We open the the **NavMenu.razor** file and we comment all the code:
+
+![image](https://github.com/user-attachments/assets/6a071650-0c11-4d7f-9670-05f91c51593b)
+
+We modify the **MainLayout.razor** component and include the following code:
+
+```razor
+@inherits LayoutComponentBase
+
+<div class="page">
+    <!-- Navigation bar at the top with blue background and no Navbar label -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: blue;">
+        <div class="container-fluid">
+            <!-- Removed Navbar label -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="counter">Counter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="weather">Weather</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="accordion">Accordion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add spacing for the navbar -->
+    <main class="mt-5 pt-3">
+        <div class="top-row px-4">
+            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank" class="text-dark">About</a>
+        </div>
+
+        <!-- Blazor component content below the navigation -->
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+</div>
+```
+
+## 10. Run the application and see the results
+
+![image](https://github.com/user-attachments/assets/9b7178b1-f13e-4981-9d65-53cb76c197a7)
+
+![image](https://github.com/user-attachments/assets/14cbe1e0-38b0-457d-9aa7-e569adf11df8)
+
+![image](https://github.com/user-attachments/assets/af333e66-31b3-43c7-b7b6-7f4feea5368f)
+
+
