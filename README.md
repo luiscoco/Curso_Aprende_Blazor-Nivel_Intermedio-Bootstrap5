@@ -248,3 +248,10 @@ This is the whole App.razor code:
 
 ## 8. Run the application and see the results
 
+We first press in the **Expand All** button 
+
+![image](https://github.com/user-attachments/assets/735b3b94-7c9a-48b0-9e00-aa34010f0da1)
+
+Then we press in the **Collapse All** button
+
+![image](https://github.com/user-attachments/assets/2739ffe2-3b54-492c-a617-43709492c8fd)
